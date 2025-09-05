@@ -1,2 +1,11 @@
 /* https://panda-css.com/docs/concepts/cascade-layers */
 @layer reset, base, tokens, recipes, utilities;
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
