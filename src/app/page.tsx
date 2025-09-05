@@ -1,5 +1,7 @@
+import { ErrorBoundary } from "@/_component/ErrorBoundary";
 import { AccordionComponent } from "@/_component/accordion";
 import { css } from "../../styled-system/css";
+
 export default function Page() {
     return (
         <main
@@ -9,7 +11,9 @@ export default function Page() {
                 marginInline: "auto",
             })}
         >
-            <AccordionComponent />
+            <ErrorBoundary>
+                <AccordionComponent />
+            </ErrorBoundary>
         </main>
     );
 }
