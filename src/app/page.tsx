@@ -9,6 +9,7 @@ export default function Page() {
                 marginInline: "auto",
             })}
         >
+            <p>テストコメント</p>
             <AccordionComponent />
         </main>
     );
